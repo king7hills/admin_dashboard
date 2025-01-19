@@ -7,67 +7,92 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="title">
-            <img src="" alt="">
-            <h1>Dashboard</h1>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="title">
+                <img src="" alt="">
+                <h1>Dashboard</h1>
+            </div>
+        
+            <div class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Lift Planner</a></li>
+                    <li><a href="">Lift History</a></li>
+                    <li><a href="">Notes</a></li>
+                    <li><a href="">Achievements</a></li>
+                    <li><a href="">Exercises</a></li>
+                    <li><a href="">Community</a></li>
+                </ul>
+            </div>
+        
+            <div class="control_panel">
+                <ul>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Privacy</a></li>
+                </ul>
+            </div>
         </div>
         
-        <div class="nav">
-            <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Lift Planner</li>
-                <li>Lift History</li>
-                <li>Notes</li>
-                <li>Achievements</li>
-                <li>Exercises</li>
-                <li>Community</li>
-            </ul>
+        <div class="header">
+            <search></search>
+            <img class="notification_icon" src="" alt="">
+            <img class="profile_small" src="" alt="">
+            <h3>User Name Here</h3>
+            <img class="profile_medium" src="" alt="">
+            <p>Hi there,</p>
+            <h2>User Name Here (@username)</h2>
+            <button class="new_workout">New Lift</button> <button class="logs">Logs</button> <button class="share">Share</button>
         </div>
         
-        <div class="control_panel">
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-        </div>
-    </div>
-
-    <div class="header">
-        <search></search>
-        <img class="notification_icon" src="" alt="">
-        <img class="profile_small" src="" alt="">
-        <h3>User Name Here</h3>
-        <img class="profile_medium" src="" alt="">
-        <p>Hi there,</p>
-        <h2>User Name Here (@username)</h2>
-        <button class="new_workout">New Lift</button> <button class="logs">Logs</button> <button class="share">Share</button>
-    </div>
-
-    <div class="main">
-        <div class="recent">Recent Lifts
-            <div class="card">Example 1</div>
-            <div class="card">Example 2</div>
-            <div class="card">Example 3</div>
-            <div class="card">Example 4</div>
-            <div class="card">Example 5</div>
-            <div class="card">Example 6</div>
-        </div>
-        <div class="upcoming">Upcoming Lifts
-
-        </div>
-        <div class="announcements">Announcements
-            <div class="announcement_card">
-                <h4>App Maintenance</h4>
-                <p></p>
+        <div class="main">
+            <div class="recent">Recent Lifts
+                <div class="card">
+                    <h3>Example 1</h3>
+                </div>
+                <div class="card">
+                    <h3>Example 2</h3>
+                </div>
+                <div class="card">
+                    <h3>Example 3</h3>
+                </div>
+                <div class="card">
+                    <h3>Example 4</h3>
+                </div>
+                <div class="card">
+                    <h3>Example 5</h3>
+                </div>
+                <div class="card">
+                    <h3>Example 6</h3>
+                </div>
             </div>
-            <div class="announcement_card">
-                <h4>New Achievements</h4>
-                <p></p>
+        
+            <div class="upcoming">My Schedule
+                <div class="week_calendar">Week of {today's date}
+                    <div class="weekday">Sun</div>
+                    <div class="weekday">Mon</div>
+                    <div class="weekday">Tue</div>
+                    <div class="weekday">Wed</div>
+                    <div class="weekday">Thu</div>
+                    <div class="weekday">Fri</div>
+                    <div class="weekday">Sat</div>
+                </div>
             </div>
-            <div class="announcement_card">
-                <h4>Community Graphs</h4>
-                <p></p>
+            <div class="announcements">Announcements
+                <div class="announcement_card">
+                    <h4>App Maintenance</h4>
+                    <p></p>
+                </div>
+                <div class="announcement_card">
+                    <h4>New Achievements</h4>
+                    <p></p>
+                </div>
+                <div class="announcement_card">
+                    <h4>Community Graphs</h4>
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
