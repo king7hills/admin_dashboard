@@ -9,12 +9,12 @@
 <body>
     <div class="wrapper">
         <div class="sidebar">
-            <div class="title">
+            <div class="sidebar_title">
                 <img src="" alt="">
                 <h1>Dashboard</h1>
             </div>
         
-            <div class="nav">
+            <div class="sidebar_nav">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Profile</a></li>
@@ -27,7 +27,7 @@
                 </ul>
             </div>
         
-            <div class="control_panel">
+            <div class="sidebar_control_panel">
                 <ul>
                     <li><a href="">Settings</a></li>
                     <li><a href="">Support</a></li>
@@ -37,40 +37,44 @@
         </div>
         
         <div class="header">
-            <search></search>
-            <img class="notification_icon" src="" alt="">
+            <search class="head_search"></search>
+            <img class="head_notification_icon" src="" alt="">
             <img class="profile_small" src="" alt="">
-            <h3>User Name Here</h3>
+            <h3 class="head_username">User Name Here</h3>
             <img class="profile_medium" src="" alt="">
-            <p>Hi there,</p>
-            <h2>User Name Here (@username)</h2>
-            <button class="new_workout">New Lift</button> <button class="logs">Logs</button> <button class="share">Share</button>
+            <p class="head_greeting">Hi there,</p>
+            <h2 class="head_userinfo">User Name Here (@username)</h2>
+            <button class="headbutt new_workout">New Lift</button> <button class="headbutt logs">Logs</button> <button class="headbutt share">Share</button>
         </div>
         
         <div class="main">
-            <div class="recent">Recent Lifts
-                <div class="card">
-                    <h3>Example 1</h3>
-                </div>
-                <div class="card">
-                    <h3>Example 2</h3>
-                </div>
-                <div class="card">
-                    <h3>Example 3</h3>
-                </div>
-                <div class="card">
-                    <h3>Example 4</h3>
-                </div>
-                <div class="card">
-                    <h3>Example 5</h3>
-                </div>
-                <div class="card">
-                    <h3>Example 6</h3>
+            <div class="main_recent">
+                <div class="main_section_title">Recent Lifts</div>
+                <div class="recent_card_wrapper">
+                    <div class="card">
+                        <h3>Example 1</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Example 2</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Example 3</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Example 4</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Example 5</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Example 6</h3>
+                    </div>
                 </div>
             </div>
         
-            <div class="upcoming">My Schedule
-                <div class="week_calendar">Week of {today's date}
+            <div class="main_upcoming">
+                <div class="main_section_title">My Schedule</div>
+                <div class="week_calendar">
                     <div class="weekday">Sun</div>
                     <div class="weekday">Mon</div>
                     <div class="weekday">Tue</div>
@@ -79,19 +83,23 @@
                     <div class="weekday">Fri</div>
                     <div class="weekday">Sat</div>
                 </div>
+                <div class="week_title">Week of {today's date}</div>
             </div>
-            <div class="announcements">Announcements
-                <div class="announcement_card">
-                    <h4>App Maintenance</h4>
-                    <p></p>
-                </div>
-                <div class="announcement_card">
-                    <h4>New Achievements</h4>
-                    <p></p>
-                </div>
-                <div class="announcement_card">
-                    <h4>Community Graphs</h4>
-                    <p></p>
+            <div class="main_announcements">
+                <div class="main_section_title">Announcements</div>
+                <div class="announcement_card_wrapper">
+                    <div class="announcement_card">
+                        <h4>App Maintenance</h4>
+                        <p></p>
+                    </div>
+                    <div class="announcement_card">
+                        <h4>New Achievements</h4>
+                        <p></p>
+                    </div>
+                    <div class="announcement_card">
+                        <h4>Community Graphs</h4>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </div>
