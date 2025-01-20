@@ -6,6 +6,8 @@
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -24,7 +26,6 @@ a {
 
 svg {
     fill: white;
-    max-width: 42px;
 }
 
 .wrapper {
@@ -51,6 +52,27 @@ svg {
     color: white;
 }
 
+.sidebar_title, li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.sidebar_title > svg {
+    max-width: 54px;
+}
+
+li {    
+    font-size: 22px;
+    font-weight: 400;
+    padding: 7px;
+}
+
+li > svg {
+    margin-right: 13px;
+    max-width: 42px;
+}
+
 .header {
     grid-column: 2;
     grid-row: 1;
@@ -66,24 +88,29 @@ svg {
 
 .header_toprow {
     margin-right: 36px;
-}
-
-.header_bottomrow {
     justify-content: space-between;
 }
 
+.header_toprow  svg {
+    max-width: 34px;
+}
+
 search {
-    flex: 2 1 0;
+    flex: 1 1 0;
     padding: 10px;
     margin-left: 16px;
 }
 
 .profile_small {
+    max-height: 50px;
     max-width: 50px;
 }
 
-.head_username {
-
+.notification_area {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .head_greeting {
@@ -92,6 +119,10 @@ search {
     font-size: 24px;
     font-style: italic;
     margin-left: 16px;
+}
+
+.header_bottomrow {
+    justify-content: space-between;
 }
 
 .head_profile_group {
