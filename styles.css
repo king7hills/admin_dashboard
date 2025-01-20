@@ -22,7 +22,9 @@ a {
     --brown-accent: #1D0000;
 }
 
-
+svg {
+    fill: white;
+}
 
 .wrapper {
     display: grid;
@@ -33,6 +35,11 @@ a {
     gap: 3px;
     background-color: var(--gray-accent);
     border-radius: 10px;
+}
+
+.sidebar, .header, .main {
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .sidebar {
@@ -48,6 +55,11 @@ a {
     grid-row: 1;
     display: flex;
     background-color: var(--triad-color1);
+}
+
+.main_recent, .main_upcoming,
+.main_announcements {
+    padding: 10px;
 }
 
 .main {
@@ -70,12 +82,15 @@ a {
     gap: 25px;
 }
 
-.card {
+.card, .announcement_card {
     background-color: white;
     color: black;
     border: 1px solid rgb(0, 0, 0, 0.5);
-    border-radius: 5px;
-    box-shadow: 10px 5px 5px var(--brown-accent);
+    border-radius: 7px;
+}
+
+.card {
+    box-shadow: 3px 4px 5px var(--brown-accent);
 }
 
 .main_upcoming {
@@ -88,4 +103,14 @@ a {
 
 .main_announcements {
     grid-column: 2;
+}
+
+.announcement_card_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+}
+
+.announcement_card {
+    box-shadow: 1px 1px 3px var(--brown-accent);
 }
