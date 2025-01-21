@@ -11,6 +11,11 @@
     font-style: normal;
 }
 
+/* May need to revisit this max width, especially when working on mobile responsiveness */
+.wrapper {
+    max-width: 1700px;
+}
+
 input, button, textarea, select {
     font: inherit;
   }
@@ -197,15 +202,26 @@ input#query {
 .main_recent, .main_upcoming,
 .main_announcements {
     padding: 10px;
+    line-height: 1.5rem;
 }
 
 .main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     background-color: var(--triad-color2);
     gap: 15px;
 }
+
+.main_section_title {
+    font-size: 2rem;
+    font-weight: 540;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Main Recent */
 
 .main_recent {
     grid-column: 1;
@@ -219,13 +235,6 @@ input#query {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
-}
-
-.main_section_title {
-    font-size: 2rem;
-    font-weight: 540;
-    text-decoration: underline;
-    margin-bottom: 25px;
 }
 
 .card, .announcement_card {
@@ -249,14 +258,75 @@ input#query {
     margin-bottom: 10px;
 }
 
+/* Main Upcoming */
+
 .main_upcoming {
     grid-column: 2;
+    text-align: center;
 }
 
 .week_calendar {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7, max-width(fit-content));
+    grid-auto-flow: column;
+    gap: 2px;
 }
 
+.week_calendar div {
+    border-radius: 7px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+
+.week_calendar div, .announcement_card {
+    box-shadow: 1px 1px 2px silver;
+}
+
+/* Update with JavaScript: START */
+.week_calendar .sun, .week_calendar .mon {
+    background-color: var(--gray-accent);
+    color: white;
+}
+
+.week_calendar .tue {
+    background-color: green;
+    color: white;
+}
+
+.week_calendar .fri {
+    background-color: var(--direct-compliment);
+    color: white;
+}
+/* Update with JavaScript: END */
+
+.week_summary {
+    margin-top: 36px;
+}
+
+.week_summary div {
+    margin-bottom: 24px;
+}
+
+.week_title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.week_summary_today, .week_summary_pending {
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid black;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Main Announcements */
 .main_announcements {
     grid-column: 2;
 }
@@ -268,5 +338,11 @@ input#query {
 }
 
 .announcement_card {
-    box-shadow: 1px 1px 3px var(--brown-accent);
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.announcement_card > * {
+    margin-left: 10px;
+    margin-bottom: 8px;
 }
